@@ -1,0 +1,2 @@
+class LeverageException(Exception):
+    pass

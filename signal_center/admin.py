@@ -1,3 +1,5 @@
 from django.contrib import admin
+from signal_center.models import NewSignal
 
-# Register your models here.
+
+admin.site.register(NewSignal)

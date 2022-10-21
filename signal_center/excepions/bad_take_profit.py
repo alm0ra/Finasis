@@ -1,0 +1,2 @@
+class BadTakeProfitException(ValueError):
+    pass

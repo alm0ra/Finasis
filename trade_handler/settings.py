@@ -43,8 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'accounts',
+    'signal_center',
     'exchange_connector',
-    'trade_handler'
 ]
 
 MIDDLEWARE = [

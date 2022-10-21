@@ -1,2 +1,2 @@
-from okex import *
-from interfaces import *
+from .okex import *
+from .interfaces import *

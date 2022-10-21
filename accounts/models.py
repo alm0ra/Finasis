@@ -1,14 +1,21 @@
 from django.db import models
+from django.utils.translation import gettext_lazy as _
 
 
 class ExchangeAccounts(models.Model):
     OKEX = 'okex'
     EXCHANGE_CHOICES = (
-        (OKEX, OKEX)
+        (OKEX, OKEX),
     )
     username = models.CharField(max_length=40, verbose_name="کاربر")
 
-    exchanage_name = models.CharField(choices=EXCHANGE_CHOICES, verbose_name='صرافی مربوطه')
+    exchange_name = models.CharField(
+        choices=EXCHANGE_CHOICES,
+        max_length=50,
+        verbose_name='صرافی مربوطه',
+        blank=False,
+        null=False
+    )
 
     api_key = models.TextField(blank=False, null=False)
     secret_key = models.TextField(blank=False, null=False)

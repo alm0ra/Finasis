@@ -1,0 +1,2 @@
+class BadStopLossException(ValueError):
+    pass
